@@ -331,6 +331,13 @@ LSTFILES   = $(addprefix $(OUTDIR)/, $(addsuffix .lst, $(ALLSRCBASE)))
 # Define all depedency-files (used for make clean).
 DEPFILES   = $(addprefix $(OUTDIR)/dep/, $(addsuffix .o.d, $(ALLSRCBASE)))
 
+#DS Added, NJF Modified
+$(warning START OF PRINTOUT)
+$(warning -#SRC#- $(SRC))
+$(warning -#CFLAGS#- $(CFLAGS))
+$(warning -#LDFLAGS#- $(LDFLAGS))
+$(warning END OF PRINTOUT)
+
 # Default target.
 all: gccversion build
 

@@ -9,7 +9,7 @@ last updated: 10/21/2012
 
 '''
 This script will parse the output from the makefile and copy the source files, cflags, and ldflags to a new project directory.
-In the flight/revolution/Makefile. At approx line 459 add the following to the makefile:
+In the flight/targets/Flyingf3/Makefile. At approx line 325 add the following to the makefile:
 
 #DS Added, NJF Modified
 $(warning START OF PRINTOUT)
