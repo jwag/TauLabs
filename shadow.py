@@ -71,7 +71,7 @@ def main():
     
     #This is the name of the temporary directory that will be copied into the Atollic project.
     #TODO: Make new_proj_name a command line argument or ask for it.
-    new_project_name = "ksu_revo"
+    new_project_name = "flyingKSU"
     
     # Get the current working directory (cwd) and make sure the drive letter is capitalized.
     # The output from the make file is not always capitalized so we need to make sure everything is the same.
@@ -88,8 +88,8 @@ def main():
             print("\nWarning!\n\t" + new_dir + "already exists and will be erased.")
             shutil.rmtree(new_dir)
     
-    #This is the path to the Revolution code in the OpenPilot Repository (this should never change)
-    base_path = "flight/Revolution/"    
+    #This is the path to the FlyingF3 code in the repository (this should never change)
+    base_path = "flight/targets/FlyingF3/"    
     
     print("Parsing " + os.path.join(cwd,str(sys.argv[1])) + "\n\tFiles will be copied to the intermediate directory at: "+new_dir)
     
